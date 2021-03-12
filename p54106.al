@@ -12,7 +12,7 @@ OBJECT Page 54106 Contract Card
     Editable=Yes;
     CaptionML=[CSY=Karta smlouvy;
                ENU=Contract Card;
-               RUS=Карточка контракта];
+               RUS=я┐╜я┐╜я┐╜я┐╜чка я┐╜я┐╜я┐╜я┐╜ракя┐╜];
     SourceTable=Table54105;
     PageType=Card;
     OnOpenPage=BEGIN
@@ -47,7 +47,7 @@ OBJECT Page 54106 Contract Card
       { 1101495008;1 ;Action    ;
                       Name=<Action1101495008>;
                       CaptionML=[ENU=Payment Schedule;
-                                 RUS=График платежей];
+                                 RUS=я┐╜я┐╜фик я┐╜я┐╜я┐╜тежя┐╜я┐╜];
                       Promoted=Yes;
                       PromotedCategory=Process;
                       OnAction=VAR
@@ -61,7 +61,7 @@ OBJECT Page 54106 Contract Card
       { 1101495009;1 ;Action    ;
                       Name=<Action1101495009>;
                       CaptionML=[ENU=Archive Payment Schedule;
-                                 RUS=Архив. график платежей];
+                                 RUS=я┐╜я┐╜хив. я┐╜я┐╜фик я┐╜я┐╜я┐╜тежя┐╜я┐╜];
                       OnAction=VAR
                                  ArchivePaymentScheduleLoc@1101495000 : Record 50005;
                                BEGIN
@@ -72,7 +72,7 @@ OBJECT Page 54106 Contract Card
                                 }
       { 1000000059;1 ;Action    ;
                       CaptionML=[ENU=Daily Running Payables Schedule;
-                                 RUS="Штрафы за просрочку платежей по графику "];
+                                 RUS="я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜тежя┐╜я┐╜ я┐╜я┐╜ я┐╜я┐╜фикя┐╜ "];
                       Promoted=No;
                       PromotedCategory=Process;
                       OnAction=VAR
@@ -85,12 +85,12 @@ OBJECT Page 54106 Contract Card
       { 1101495013;1 ;ActionGroup;
                       Name=<Action1101495013>;
                       CaptionML=[ENU=Entry;
-                                 RUS=Операции] }
+                                 RUS=я┐╜я┐╜я┐╜я┐╜ции] }
       { 1101495010;2 ;Action    ;
                       Name=<Action1101495010>;
                       ShortCutKey=Ctrl+F5;
                       CaptionML=[ENU=Entry;
-                                 RUS=Книга операций по клиентам];
+                                 RUS=я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ций я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜там];
                       Promoted=Yes;
                       PromotedCategory=Process;
                       OnAction=VAR
@@ -102,7 +102,7 @@ OBJECT Page 54106 Contract Card
                                 }
       { 1101495011;2 ;Action    ;
                       CaptionML=[ENU=G/L Entry;
-                                 RUS=Фин. операции];
+                                 RUS=я┐╜я┐╜я┐╜. я┐╜я┐╜я┐╜я┐╜ции];
                       Promoted=Yes;
                       PromotedCategory=Process;
                       OnAction=VAR
@@ -115,14 +115,14 @@ OBJECT Page 54106 Contract Card
       { 1101495012;2 ;Action    ;
                       Name=<Action1101495012>;
                       CaptionML=[ENU=Comission General Ledger Entries;
-                                 RUS=Фин. операции комиссий];
+                                 RUS=я┐╜я┐╜я┐╜. я┐╜я┐╜я┐╜я┐╜ции я┐╜я┐╜я┐╜я┐╜я┐╜сий];
                       RunObject=Page 20;
                       RunFormView=SORTING(Contract No.)
                                   WHERE(GLE Comission=CONST(Yes));
                       RunFormLink=Contract No.=FIELD(Contract No.) }
       { 1101495032;2 ;Action    ;
                       CaptionML=[ENU=Detailed Cust. Ledg. Entries;
-                                 RUS=Подробные операции клиента];
+                                 RUS=я┐╜я┐╜я┐╜робя┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ции я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜];
                       OnAction=VAR
                                  DetailedCustLedgEntryLcl@1101495000 : Record 379;
                                BEGIN
@@ -135,12 +135,12 @@ OBJECT Page 54106 Contract Card
                       Name=<Action1000000028>;
                       CaptionML=[CSY=Zobrazit detaily;
                                  ENU=Show Details;
-                                 RUS=Подробно] }
+                                 RUS=я┐╜я┐╜я┐╜робя┐╜я┐╜] }
       { 1000000076;2 ;Action    ;
                       Name=<Action1000000076>;
-                      CaptionML=[CSY=Obdobб гroЯenб;
+                      CaptionML=[CSY=Obdobя┐╜ я┐╜roя┐╜enя┐╜;
                                  ENU=Interest Period;
-                                 RUS=Проценты за период];
+                                 RUS=я┐╜я┐╜ценя┐╜я┐╜ я┐╜я┐╜ я┐╜я┐╜риоя┐╜];
                       OnAction=VAR
                                  InterestPeriodLcl@1000000000 : Record 54125;
                                BEGIN
@@ -150,9 +150,9 @@ OBJECT Page 54106 Contract Card
                                 }
       { 1000000030;2 ;Action    ;
                       Name=<Action1000000029>;
-                      CaptionML=[CSY=Zm╪ny na smlouv╪;
+                      CaptionML=[CSY=Zmя┐╜ny na smlouvя┐╜;
                                  ENU=Contract Changes;
-                                 RUS=Контракт изменения];
+                                 RUS=я┐╜я┐╜я┐╜я┐╜ракя┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜];
                       Promoted=Yes;
                       PromotedCategory=Process;
                       OnAction=VAR
@@ -164,10 +164,10 @@ OBJECT Page 54106 Contract Card
                                 }
       { 1101495014;1 ;ActionGroup;
                       CaptionML=[ENU=Integration;
-                                 RUS=Интеграция] }
+                                 RUS=я┐╜я┐╜тегя┐╜я┐╜я┐╜] }
       { 1101495015;2 ;Action    ;
                       CaptionML=[ENU=Transfer Payment Schedule;
-                                 RUS=Передача графика];
+                                 RUS=я┐╜я┐╜редя┐╜я┐╜ я┐╜я┐╜фикя┐╜];
                       OnAction=VAR
                                  TransferPaySchedNAVCRMLoc@1101495000 : Record 54110;
                                BEGIN
@@ -177,7 +177,7 @@ OBJECT Page 54106 Contract Card
                                 }
       { 1101495016;2 ;Action    ;
                       CaptionML=[ENU=CRM Instruction;
-                                 RUS=Инструкции CRM];
+                                 RUS=я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ции CRM];
                       OnAction=VAR
                                  AccInstructionsCRMNAVLoc@1101495000 : Record 54104;
                                BEGIN
@@ -187,7 +187,7 @@ OBJECT Page 54106 Contract Card
                                 }
       { 1101495017;2 ;Action    ;
                       CaptionML=[ENU=Transfer Contract CRM - NAV;
-                                 RUS=Передача контракта CRM - NAV];
+                                 RUS=я┐╜я┐╜редя┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ракя┐╜ CRM - NAV];
                       OnAction=VAR
                                  ContractCRMNAVLoc@1101495000 : Record 54116;
                                BEGIN
@@ -197,7 +197,7 @@ OBJECT Page 54106 Contract Card
                                 }
       { 1101495018;2 ;Action    ;
                       CaptionML=[ENU=Transfer Contract NAV -CRM;
-                                 RUS=Передача контракта NAV - CRM];
+                                 RUS=я┐╜я┐╜редя┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ракя┐╜ NAV - CRM];
                       OnAction=VAR
                                  ContractNAVCRMLoc@1101495000 : Record 54117;
                                BEGIN
@@ -206,20 +206,20 @@ OBJECT Page 54106 Contract Card
                                END;
                                 }
       { 1101495026;2 ;Action    ;
-                      CaptionML=[CSY=щЯetnб poloзky - NAV - CRM;
+                      CaptionML=[CSY=я┐╜etnя┐╜ poloя┐╜ky - NAV - CRM;
                                  ENU=Accounting Entries - NAV - CRM;
-                                 RUS=Фин. операции NAV - CRM];
+                                 RUS=я┐╜я┐╜я┐╜. я┐╜я┐╜я┐╜я┐╜ции NAV - CRM];
                       RunObject=Page 54111;
                       RunFormLink=Contract No.=FIELD(Contract No.) }
       { 1000000089;0 ;ActionContainer;
                       Name=<Action1000000088>;
                       CaptionML=[CSY=Reports;
                                  ENU=Reports;
-                                 RUS=Отчёты];
+                                 RUS=я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜];
                       ActionContainerType=Reports }
       { 1101495053;1 ;Action    ;
                       CaptionML=[ENU=Print;
-                                 RUS=Печать];
+                                 RUS=я┐╜я┐╜я┐╜я┐╜я┐╜];
                       Promoted=Yes;
                       PromotedIsBig=Yes;
                       PromotedCategory=Report;
@@ -233,7 +233,7 @@ OBJECT Page 54106 Contract Card
                       Name=<Action1000000087>;
                       CaptionML=[CSY=Future Payables for Early Term;
                                  ENU=Future Payables for Early Term;
-                                 RUS=Расчет суммы к ПДП];
+                                 RUS=я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜уммя┐╜ я┐╜ я┐╜я┐╜я┐╜];
                       Promoted=Yes;
                       Image=Report;
                       PromotedCategory=Report;
@@ -252,7 +252,7 @@ OBJECT Page 54106 Contract Card
       { 1101495040;1 ;Action    ;
                       Name=<Action1101495040>;
                       CaptionML=[ENU=Calculate ET Amount;
-                                 RUS=Рассчитать сумму к ПДП (Новое)];
+                                 RUS=я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜уммя┐╜ я┐╜ я┐╜я┐╜я┐╜ (я┐╜я┐╜я┐╜я┐╜я┐╜)];
                       Promoted=Yes;
                       Image=Report;
                       PromotedCategory=Report;
@@ -321,16 +321,16 @@ OBJECT Page 54106 Contract Card
                       ShortCutKey=Shift+Ctrl+D;
                       CaptionML=[CSY=Dimenze;
                                  ENU=Dimensions;
-                                 RUS=Измерения;
+                                 RUS=я┐╜я┐╜я┐╜я┐╜реня┐╜я┐╜;
                                  SKY="Dimenzie "];
                       OnAction=BEGIN
                                  ShowDocDim;
                                END;
                                 }
       { 1000000037;1 ;Action    ;
-                      CaptionML=[CSY=Poloзky zаkaznбka za smlouvu;
+                      CaptionML=[CSY=Poloя┐╜ky zя┐╜kaznя┐╜ka za smlouvu;
                                  ENU=Customer Ledger Entry per Contract;
-                                 RUS=Книга операций клиентов];
+                                 RUS=я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ций я┐╜я┐╜я┐╜я┐╜я┐╜тов];
                       RunObject=Page 25;
                       RunFormView=SORTING(Customer No.,Contract No.);
                       RunFormLink=Customer No.=FIELD(Customer No.),
@@ -343,16 +343,16 @@ OBJECT Page 54106 Contract Card
                                END;
                                 }
       { 1000000041;1 ;Action    ;
-                      CaptionML=[CSY=Karta zаkaznбka;
+                      CaptionML=[CSY=Karta zя┐╜kaznя┐╜ka;
                                  ENU=Customer Card;
-                                 RUS=Карточка клиента];
+                                 RUS=я┐╜я┐╜я┐╜я┐╜чка я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜];
                       RunObject=Page 21;
                       RunFormLink=No.=FIELD(Customer No.);
                       Promoted=Yes;
                       PromotedCategory=Process }
       { 1000000016;1 ;Action    ;
                       CaptionML=[ENU=Bank Accounts;
-                                 RUS=Банковский счет];
+                                 RUS=я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ския┐╜ я┐╜я┐╜я┐╜];
                       RunObject=Page 424;
                       RunFormLink=Customer No.=FIELD(Customer No.),
                                   Contract No.=FIELD(Contract No.) }
@@ -373,19 +373,19 @@ OBJECT Page 54106 Contract Card
                       Name=<Action1000000044>;
                       CaptionML=[CSY=F&unkce;
                                  ENU=F&unctions;
-                                 RUS=Ф&ункции;
+                                 RUS=я┐╜&ункции;
                                  SKY=F&unkcie] }
       { 1000000049;2 ;Action    ;
                       Name=<Action1000000045>;
-                      CaptionML=[CSY=UkonЯit smlouvu;
+                      CaptionML=[CSY=Ukonя┐╜it smlouvu;
                                  ENU=End Contract;
-                                 RUS=Завершить контракт];
+                                 RUS=я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ракя┐╜];
                       Promoted=Yes;
                       PromotedIsBig=Yes;
                       PromotedCategory=Process;
                       OnAction=VAR
                                  CustLELcl@1000000000 : Record 21;
-                                 NotEndedContract@1000000002 : TextConst 'CSY=Smlouvu nelze ukonЯit.;ENU=Contract is not allow to end.';
+                                 NotEndedContract@1000000002 : TextConst 'CSY=Smlouvu nelze ukonя┐╜it.;ENU=Contract is not allow to end.';
                                  PaymentSchedLcl@1000000003 : Record 50003;
                                  NotPost@1000000004 : Boolean;
                                BEGIN
@@ -416,9 +416,9 @@ OBJECT Page 54106 Contract Card
                                END;
                                 }
       { 1000000081;2 ;Action    ;
-                      CaptionML=[CSY=Pаrovat nep¤i¤azenВ platby;
+                      CaptionML=[CSY=Pя┐╜rovat nepя┐╜iя┐╜azenя┐╜ platby;
                                  ENU=Apply Payment;
-                                 RUS=Применить платёж];
+                                 RUS=я┐╜римя┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜];
                       OnAction=VAR
                                  CustLELcl@1000000000 : Record 21;
                                BEGIN
@@ -428,7 +428,7 @@ OBJECT Page 54106 Contract Card
                                 }
       { 1101495024;2 ;Action    ;
                       CaptionML=[ENU=20 Days Storno;
-                                 RUS=Сторно в течение 20 дней];
+                                 RUS=я┐╜я┐╜рно я┐╜ я┐╜ченя┐╜я┐╜ 20 я┐╜я┐╜я┐╜я┐╜];
                       OnAction=VAR
                                  FinancialLoansCheckPostingL@1101495000 : Codeunit 54102;
                                BEGIN
@@ -438,11 +438,11 @@ OBJECT Page 54106 Contract Card
       { 1101495047;2 ;ActionGroup;
                       Name=<Action1101495042>;
                       CaptionML=[ENU=Post Additional Services;
-                                 RUS=Учет доп. услуг] }
+                                 RUS=я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜. я┐╜я┐╜я┐╜] }
       { 1101495046;3 ;Action    ;
                       Name=<Action1101495043>;
                       CaptionML=[ENU=Payment postponement;
-                                 RUS=Отсрочка очередного платежа];
+                                 RUS=я┐╜я┐╜я┐╜я┐╜чка я┐╜я┐╜редя┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜тежя┐╜];
                       OnAction=VAR
                                  FinancialLoansManagementL@1101495002 : Codeunit 54101;
                                  GenJnlManagementL@1101495001 : Codeunit 230;
@@ -458,11 +458,11 @@ OBJECT Page 54106 Contract Card
                                 }
       { 1101495048;3 ;Action    ;
                       CaptionML=[ENU=Due date change;
-                                 RUS=Перенос даты платежа] }
+                                 RUS=я┐╜я┐╜реня┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜тежя┐╜] }
       { 1101495045;3 ;Action    ;
                       Name=<Action1101495044>;
                       CaptionML=[ENU=Quotes on loan balance/payments etc;
-                                 RUS=Предоставление доп. справок о зад-ти / о платежах по договору];
+                                 RUS=я┐╜редя┐╜я┐╜тавя┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜. я┐╜равя┐╜я┐╜ я┐╜ я┐╜я┐╜я┐╜-я┐╜ / я┐╜ я┐╜я┐╜я┐╜тежя┐╜я┐╜ я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜];
                       OnAction=VAR
                                  FinancialLoansManagementL@1101495002 : Codeunit 54101;
                                  GenJnlManagementL@1101495001 : Codeunit 230;
@@ -479,7 +479,7 @@ OBJECT Page 54106 Contract Card
       { 1101495044;3 ;Action    ;
                       Name=<Action1101495045>;
                       CaptionML=[ENU=SMS Notification;
-                                 RUS=СМС-информирование];
+                                 RUS=я┐╜я┐╜я┐╜-я┐╜я┐╜я┐╜рмировя┐╜я┐╜я┐╜я┐╜];
                       Visible=FALSE;
                       OnAction=VAR
                                  FinancialLoansManagementL@1101495002 : Codeunit 54101;
@@ -497,7 +497,7 @@ OBJECT Page 54106 Contract Card
       { 1101495043;3 ;Action    ;
                       Name=<Action1101495046>;
                       CaptionML=[ENU=E-copy of the loan agreement to Client's email;
-                                 RUS=Отправка электронной версии договора займа по электронной почте];
+                                 RUS=я┐╜я┐╜равя┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜роня┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜сии я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜роня┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜];
                       OnAction=VAR
                                  FinancialLoansManagementL@1101495002 : Codeunit 54101;
                                  GenJnlManagementL@1101495001 : Codeunit 230;
@@ -514,7 +514,7 @@ OBJECT Page 54106 Contract Card
       { 1101495042;3 ;Action    ;
                       Name=<Action1101495047>;
                       CaptionML=[ENU=Express delivery of documents (door to door);
-                                 RUS=Срочная доставка документов по микрозайму курьерской службой];
+                                 RUS=я┐╜я┐╜чная┐╜ я┐╜я┐╜я┐╜тавя┐╜я┐╜ я┐╜я┐╜я┐╜умея┐╜тов я┐╜я┐╜ я┐╜я┐╜я┐╜розя┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜скоя┐╜ я┐╜ужбя┐╜я┐╜];
                       OnAction=VAR
                                  FinancialLoansManagementL@1101495002 : Codeunit 54101;
                                  GenJnlManagementL@1101495001 : Codeunit 230;
@@ -531,7 +531,7 @@ OBJECT Page 54106 Contract Card
       { 1101495041;3 ;Action    ;
                       Name=<Action1101495048>;
                       CaptionML=[ENU=Check of Credit history;
-                                 RUS=Предоставление кредитного отчета НБКИ];
+                                 RUS=я┐╜редя┐╜я┐╜тавя┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜редя┐╜тноя┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜];
                       OnAction=VAR
                                  FinancialLoansManagementL@1101495002 : Codeunit 54101;
                                  GenJnlManagementL@1101495001 : Codeunit 230;
@@ -548,7 +548,7 @@ OBJECT Page 54106 Contract Card
       { 1101495050;2 ;Action    ;
                       Name=<Action1101495050>;
                       CaptionML=[ENU=Collateral Registration/Deregistration;
-                                 RUS=Залог Постановка/Снятие с учета];
+                                 RUS=я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜таня┐╜я┐╜я┐╜я┐╜/я┐╜я┐╜я┐╜тие я┐╜ я┐╜я┐╜я┐╜];
                       OnAction=VAR
                                  ContractL@1101495001 : Record 54105;
                                  CollateralRegistrationL@1101495000 : Report 50027;
@@ -561,7 +561,7 @@ OBJECT Page 54106 Contract Card
                                 }
       { 1101495056;2 ;Action    ;
                       CaptionML=[ENU=Vehicle Title Pledge Set/Removal;
-                                 RUS=ПТС Постановка/Снятие с учета];
+                                 RUS=я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜таня┐╜я┐╜я┐╜я┐╜/я┐╜я┐╜я┐╜тие я┐╜ я┐╜я┐╜я┐╜];
                       OnAction=BEGIN
                                  VehicleTitleChangeStatus();
                                END;
@@ -576,7 +576,7 @@ OBJECT Page 54106 Contract Card
     { 1000000001;1;Group  ;
                 Name=General;
                 CaptionML=[ENU=General;
-                           RUS=Общее];
+                           RUS=я┐╜я┐╜щее];
                 GroupType=Group }
 
     { 1000000002;2;Field  ;
@@ -605,22 +605,22 @@ OBJECT Page 54106 Contract Card
                 Editable=false }
 
     { 1000000005;2;Field  ;
-                CaptionML=[CSY=Nominаlnб hodnota;
+                CaptionML=[CSY=Nominя┐╜lnя┐╜ hodnota;
                            ENU=Initial NV;
-                           RUS=Начальная полная стоимость];
+                           RUS=я┐╜я┐╜чальная┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜тоия┐╜я┐╜я┐╜я┐╜я┐╜];
                 SourceExpr="Nominal Amount";
                 Editable=false }
 
     { 1101495023;2;Field  ;
                 CaptionML=[ENU=Actual NV+SP;
-                           RUS=Актуальная полная стоимость];
+                           RUS=я┐╜я┐╜я┐╜уальная┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜тоия┐╜я┐╜я┐╜я┐╜я┐╜];
                 SourceExpr=GetActualNormalAmount;
                 Editable=false }
 
     { 1000000098;2;Field  ;
                 Name=<Nominal Amount>;
                 CaptionML=[ENU=Intial NV + SP;
-                           RUS=Номинал + комиссия];
+                           RUS=я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ + я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜];
                 SourceExpr="Nominal Amount"+"Installment Count"*"Product Comission";
                 Editable=FALSE }
 
@@ -634,16 +634,16 @@ OBJECT Page 54106 Contract Card
                 Editable=false }
 
     { 1000000008;2;Field  ;
-                CaptionML=[CSY=Vьчe splаtky;
+                CaptionML=[CSY=Vя┐╜я┐╜e splя┐╜tky;
                            ENU=Installment Amount;
-                           RUS=Платеж сумма начальная];
+                           RUS=я┐╜я┐╜я┐╜теж я┐╜уммя┐╜ я┐╜я┐╜чальная┐╜];
                 SourceExpr="Installment Amount";
                 Importance=Promoted;
                 Editable=false }
 
     { 1101495020;2;Field  ;
                 CaptionML=[ENU=Installment Amount Current;
-                           RUS=Платеж сумма текущая];
+                           RUS=я┐╜я┐╜я┐╜теж я┐╜уммя┐╜ текя┐╜я┐╜я┐╜];
                 SourceExpr=CurrInstallmentAmount;
                 OnLookup=VAR
                            PaymentScheduleL@1101495000 : Record 50003;
@@ -659,7 +659,7 @@ OBJECT Page 54106 Contract Card
 
     { 1000000099;2;Field  ;
                 CaptionML=[ENU=Installment Amount + Comission;
-                           RUS=Ежемес. платеж + комиссия];
+                           RUS=я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜. я┐╜я┐╜я┐╜теж + я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜];
                 SourceExpr="Installment Amount"+"Product Comission";
                 Editable=FALSE }
 
@@ -700,7 +700,7 @@ OBJECT Page 54106 Contract Card
     { 1101495003;2;Field  ;
                 Name=<Initial APR>;
                 CaptionML=[ENU=Initial APR;
-                           RUS=Начальная ПСК];
+                           RUS=я┐╜я┐╜чальная┐╜ я┐╜я┐╜я┐╜];
                 DecimalPlaces=3:3;
                 SourceExpr=GetHistoricalAPR;
                 Editable=FALSE;
@@ -776,21 +776,21 @@ OBJECT Page 54106 Contract Card
     { 1101495031;2;Field  ;
                 Name=CA Commission Rate;
                 CaptionML=[ENU=CA Commission Rate;
-                           RUS=Ставка комиссии агента];
+                           RUS=я┐╜тавя┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜сии я┐╜я┐╜я┐╜я┐╜я┐╜];
                 SourceExpr=NewUnifiedMathL.GetTotalAgentCommissionRate(Rec) }
 
     { 1101495034;2;Field  ;
                 Name=Lead Source;
                 CaptionML=[ENU=Lead Source;
-                           RUS=Источник привлечения];
+                           RUS=я┐╜я┐╜я┐╜чния┐╜ я┐╜ривя┐╜я┐╜ченя┐╜я┐╜];
                 OptionCaptionML=[ENU=" ,Sales Network,Marketing";
-                                 RUS=" ,Личное привлечение,Маркетинг"];
+                                 RUS=" ,я┐╜я┐╜чноя┐╜ я┐╜ривя┐╜я┐╜ченя┐╜я┐╜,я┐╜я┐╜ркетиня┐╜"];
                 SourceExpr=ContractCRMNAVG."Lead Source" }
 
     { 1101495033;2;Field  ;
                 Name=Loyal Client;
                 CaptionML=[ENU=Loyal Client;
-                           RUS=Повторный клиент];
+                           RUS=я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜];
                 SourceExpr=ContractCRMNAVG."Loyal Client" }
 
     { 1000000026;2;Field  ;
@@ -838,7 +838,7 @@ OBJECT Page 54106 Contract Card
 
     { 1101495021;2;Field  ;
                 CaptionML=[ENU=CRM Contract Status;
-                           RUS=CRM Статус Контракта];
+                           RUS=CRM я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ракя┐╜];
                 SourceExpr=CRMStatus;
                 Editable=FALSE;
                 OnAssistEdit=BEGIN
@@ -880,7 +880,7 @@ OBJECT Page 54106 Contract Card
                 ExtendedDatatype=URL;
                 CaptionML=[CSY=CRM Link;
                            ENU=CRM Link;
-                           RUS=CRM ссылка];
+                           RUS=CRM я┐╜я┐╜ылкя┐╜];
                 SourceExpr=CRMURL;
                 Editable=false }
 
@@ -900,13 +900,13 @@ OBJECT Page 54106 Contract Card
 
     { 1101495025;2;Field  ;
                 CaptionML=[ENU=Initial Length of Loan in Days;
-                           RUS=Исходная длительность контракта в днях];
+                           RUS=я┐╜я┐╜ходя┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜тельноя┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ракя┐╜ я┐╜ я┐╜я┐╜я┐╜я┐╜];
                 DecimalPlaces=0:0;
                 SourceExpr=GetInitialLengthOfLoan }
 
     { 1101495022;2;Field  ;
                 CaptionML=[ENU=Client is Dead;
-                           RUS=Клиент умер];
+                           RUS=я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ умея┐╜];
                 SourceExpr="Client is Dead";
                 Editable=false }
 
@@ -934,7 +934,7 @@ OBJECT Page 54106 Contract Card
                 Editable=FALSE }
 
     { 1000000054;1;Group  ;
-                CaptionML=[CSY=PrЕb╪зnВ гroЯenб;
+                CaptionML=[CSY=Prя┐╜b╪зnя┐╜ я┐╜roя┐╜enя┐╜;
                            ENU=Continues Interest];
                 Editable=false;
                 GroupType=Group }
@@ -981,7 +981,7 @@ OBJECT Page 54106 Contract Card
     { 1000000067;1;Group  ;
                 CaptionML=[CSY=Souhrn;
                            ENU=Summary;
-                           RUS=Сводка];
+                           RUS=я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜];
                 GroupType=Group }
 
     { 1000000068;2;Field  ;
@@ -994,7 +994,7 @@ OBJECT Page 54106 Contract Card
                 Editable=FALSE }
 
     { 1000000085;2;Field  ;
-                CaptionML=[CSY=щrok z prodlenб - uhrazeno k datu;
+                CaptionML=[CSY=я┐╜rok z prodlenя┐╜ - uhrazeno k datu;
                            ENU=Running Interest - Paid To Date];
                 SourceExpr=PaidToDate(0,FALSE,FALSE);
                 OnDrillDown=BEGIN
@@ -1003,7 +1003,7 @@ OBJECT Page 54106 Contract Card
                              }
 
     { 1000000084;2;Field  ;
-                CaptionML=[CSY=щrok z prodlenб poslednб spl. - uhrazeno k datu;
+                CaptionML=[CSY=я┐╜rok z prodlenя┐╜ poslednя┐╜ spl. - uhrazeno k datu;
                            ENU=Running Interest (Last Installment) - Paid To Date];
                 SourceExpr=PaidToDate(0,FALSE,TRUE);
                 OnDrillDown=BEGIN
@@ -1021,7 +1021,7 @@ OBJECT Page 54106 Contract Card
                              }
 
     { 1000000071;2;Field  ;
-                CaptionML=[CSY=Pokuta poslednб spl. - uhrazeno k datu;
+                CaptionML=[CSY=Pokuta poslednя┐╜ spl. - uhrazeno k datu;
                            ENU=Penalty (Last Installment) - Paid to Date];
                 SourceExpr=PaidToDate(1,FALSE,TRUE);
                 OnDrillDown=BEGIN
@@ -1030,7 +1030,7 @@ OBJECT Page 54106 Contract Card
                              }
 
     { 1000000070;2;Field  ;
-                CaptionML=[CSY=PoЯet dnб po splatnosti;
+                CaptionML=[CSY=Poя┐╜et dnя┐╜ po splatnosti;
                            ENU=Overdue Days to Date];
                 SourceExpr=OverdueDaysToDate(FALSE);
                 OnDrillDown=BEGIN
@@ -1044,7 +1044,7 @@ OBJECT Page 54106 Contract Card
 
     { 1101495036;1;Group  ;
                 CaptionML=[ENU=Control;
-                           RUS=Контроль];
+                           RUS=╨Ъ╨╛╨╜╤В╤А╨╛╨╗╤М];
                 GroupType=Group }
 
     { 1101495035;2;Field  ;
@@ -1062,7 +1062,7 @@ OBJECT Page 54106 Contract Card
 
     { 1101495051;1;Group  ;
                 CaptionML=[ENU=Collateral info;
-                           RUS=Залоговая инф.];
+                           RUS=я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜.];
                 GroupType=Group }
 
     { 1101495049;2;Field  ;
@@ -1086,11 +1086,11 @@ OBJECT Page 54106 Contract Card
       FinLoanSetup@1000000006 : Record 54100;
       ContractCRMNAVG@1101495002 : Record 54116;
       NewUnifiedMathL@1101495001 : Codeunit 50009;
-      CommuOKTxt@1000000003 : TextConst 'CSY=Komunikace se CRM prob╪hla bez problВmЕ.;ENU=CRM communication processed.';
-      CommuErrTxt@1000000004 : TextConst 'CSY=Komunikace se CRM skonЯila s chybou %1.;ENU=CRM communication ended with mistake %1.';
+      CommuOKTxt@1000000003 : TextConst 'CSY=Komunikace se CRM probя┐╜hla bez problя┐╜mя┐╜.;ENU=CRM communication processed.';
+      CommuErrTxt@1000000004 : TextConst 'CSY=Komunikace se CRM skonя┐╜ila s chybou %1.;ENU=CRM communication ended with mistake %1.';
       CRMURL@1000000005 : Text[1024];
       CRMStatus@1101495000 : Text[30];
-      Text50000@1101495003 : TextConst 'ENU=Recorded in General Journal! Open the Journal?;RUS=Записано в фин. журнал! Открыть журнал?';
+      Text50000@1101495003 : TextConst 'ENU=Recorded in General Journal! Open the Journal?;RUS=я┐╜я┐╜я┐╜я┐╜саня┐╜ я┐╜ фин. я┐╜я┐╜рная┐╜! я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜рная┐╜?';
 
     PROCEDURE CreateCustLENAVCRM@1000000001(ContractNoPrm@1000000000 : Code[20]);
     VAR
@@ -1225,51 +1225,51 @@ OBJECT Page 54106 Contract Card
       2017.04.07 KDV
         Changed CreatePayschedNAVCRM() (changed last posting date assign). Function is not used.
       2017.04.12 KDV
-        Новые поля Pledged, Pledge Date
+        я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ Pledged, Pledge Date
       2017.04.19 KDV
-        Поля APR, "Начальная ПСК" нa вклaдку Общее
+        я┐╜я┐╜я┐╜я┐╜ APR, "я┐╜я┐╜чальная┐╜ я┐╜я┐╜я┐╜" я┐╜a я┐╜я┐╜я┐╜aя┐╜я┐╜я┐╜ я┐╜я┐╜щее
       2017.05.02
-        Новое поле "Consent (Claim Assign. Agr.)" нa вклaдку General
+        я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ "Consent (Claim Assign. Agr.)" я┐╜a я┐╜я┐╜я┐╜aя┐╜я┐╜я┐╜ General
       2017-06-01 SAI
-        В CreatePaySchedNAVCRM добавлено заполнение поля Created by Object в таблице 54110.
+        я┐╜ CreatePaySchedNAVCRM я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ Created by Object я┐╜ табя┐╜я┐╜я┐╜ 54110.
       AKAM 220617
-        Добавлено новое поле CRM Статус Контракта
+        я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ CRM я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ракя┐╜
       AKAM 030717
-        Поле Полная стоимость переименовно в Начальная полная стоимость
-        Добавлено новое поле Актуальная полная стоимость
+        я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜тоия┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜реия┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜ я┐╜я┐╜чальная┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜тоия┐╜я┐╜я┐╜я┐╜я┐╜
+        я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜уальная┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜тоия┐╜я┐╜я┐╜я┐╜я┐╜
       2017.10.27 KDV Restructuring
-      2018.01.08 KDV поля Default, Default Date
+      2018.01.08 KDV я┐╜я┐╜я┐╜я┐╜ Default, Default Date
       AKAM 270718
-        Кнопка Контракт/Операции/ добавлен новый пункт меню "Подробные операции клиента"
+        я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ракя┐╜/я┐╜я┐╜я┐╜я┐╜ции/ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ я┐╜ункя┐╜ я┐╜я┐╜я┐╜я┐╜ "я┐╜я┐╜я┐╜робя┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ции я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜"
       PC AKAM 20180813
-        Добавлено поле Manual Control (Ручной контроль)
+        я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ Manual Control (я┐╜я┐╜чноя┐╜ я┐╜я┐╜я┐╜я┐╜роля┐╜)
       PC AKAM 160818
-        Добавлена вкладка Контроль. На вкладку добавлены поля Не расчитывать DRPS, Ручной контроль.
+        я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜роля┐╜. я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ывая┐╜я┐╜ DRPS, я┐╜я┐╜чноя┐╜ я┐╜я┐╜я┐╜я┐╜роля┐╜.
       2019-04-03 SAI
-        Изменен вызов функции NewUnifiedMathL.GetTotalAgentCommissionRate(Rec) - приведен в соответствие с оптимизированным КЮ
+        я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜ызоя┐╜ я┐╜ункции NewUnifiedMathL.GetTotalAgentCommissionRate(Rec) - я┐╜ривя┐╜я┐╜я┐╜я┐╜ я┐╜ соотвея┐╜я┐╜твия┐╜ я┐╜ я┐╜я┐╜тимя┐╜я┐╜я┐╜ровя┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜
       2019-06-10 SAI
-        Исправлен неверный вызов функции создания доп. услуг
+        я┐╜я┐╜равя┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜ызоя┐╜ я┐╜ункции созя┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜. я┐╜я┐╜я┐╜
       2019-10-01 LAV >
         Premium
-      2019.12.11 Новое поле "PTI Amount"
-      2020.03.12 Новая группа "Залоговая инф."
+      2019.12.11 я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜ "PTI Amount"
+      2020.03.12 я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜уппя┐╜ "я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜."
       2020.03.17  SAA New action - "Print"
-      2020.03.18 Пункт в меню Ф-ции "ПТС Постановка/Снятие с учета"
+      2020.03.18 я┐╜ункя┐╜ я┐╜ я┐╜я┐╜я┐╜я┐╜ я┐╜-ции "я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜таня┐╜я┐╜я┐╜я┐╜/я┐╜я┐╜я┐╜тие я┐╜ я┐╜я┐╜я┐╜"
       2020.06.05 SAA Contract "After Restart"
 
-      03.08.20 Stefa Страховка
+      03.08.20 Stefa я┐╜я┐╜я┐╜ховя┐╜я┐╜
         CurrPage."Type of Insurance"
         CurrPage.Insurance
-          were added (Общее) (Editable = FALSE)
+          were added (я┐╜я┐╜щее) (Editable = FALSE)
 
       25.08.20 Stefa New Product Type "Profi Light"
-        CurrPage."Initial Installment Due Date 2" was added (Общее) (Editable = FALSE)
+        CurrPage."Initial Installment Due Date 2" was added (я┐╜я┐╜щее) (Editable = FALSE)
 
       19.10.20 Stefa New Product Type "Profi Light"
-        CurrPage."APR Profi Light" was added (Общее) (Editable = FALSE)
+        CurrPage."APR Profi Light" was added (я┐╜я┐╜щее) (Editable = FALSE)
 
       22.10.20 Stefa NAV-404
-        CurrPage."Comission CC" was added (Общее) (Editable = FALSE) - вместо FlowField "Commission CC"
+        CurrPage."Comission CC" was added (я┐╜я┐╜щее) (Editable = FALSE) - я┐╜я┐╜я┐╜я┐╜я┐╜ FlowField "Commission CC"
     }
     END.
   }
