@@ -1062,7 +1062,7 @@ OBJECT Page 54106 Contract Card
 
     { 1101495051;1;Group  ;
                 CaptionML=[ENU=Collateral info;
-                           RUS=��������� ���.];
+                           RUS=Залоговая информация.];
                 GroupType=Group }
 
     { 1101495049;2;Field  ;
